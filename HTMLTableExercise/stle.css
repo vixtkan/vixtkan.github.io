@@ -1,0 +1,78 @@
+th, td{
+    padding: 7px 11px;
+    border: 1px solid black;
+    
+}
+
+.table1 {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 8px gray;
+    display: inline-block;
+    border-collapse: collapse;
+}
+
+.main{
+    background-color: yellow;
+    font-weight: bold;
+    margin: 10px;
+    text-align: left;
+}
+
+.important td{
+    background-color: yellow;
+    font-weight: normal;
+}
+
+td:last-child, 
+th:last-child {
+  text-align: right;
+}
+
+/*Second Table */
+
+.table2 {
+    margin: 20px;
+    padding: 20px;
+    border-collapse: collapse;
+    box-shadow: 5px 5px 8px gray;
+    border: 1px solid black;
+    display: inline-block;
+    
+}
+
+caption {
+    font-weight: bold;
+    margin: 10px;
+    font-size: 18px;
+}
+
+.main2 {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.important1{
+    background-color: yellow;
+    font-weight: normal;
+}
+
+.Nohighlight{
+    background-color: white;
+    font-weight: bold;
+}
+
+td:last-child,
+th:last-child {
+    text-align: right;
+}
+
+.footer {
+    background-color: yellow;
+    font-weight: bold;
+    }
+
+.footer td {
+  text-align: right;
+}
