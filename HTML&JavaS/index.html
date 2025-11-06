@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Learning JavaScript</h1>
+    <p>Click buttons to see info.</p>
+  </header>
+
+  <main>
+    <div class="buttons">
+      <button onclick="showHalloween()">Show Halloween</button>
+      <button onclick="showChristmas()">Show Christmas</button>
+      <button onclick="showNewYear()">Show New Year</button>
+
+
+      <button class="hide" onclick="hideHalloween()">Hide Halloween</button>
+      <button class="hide" onclick="hideChristmas()">Hide Christmas</button>
+      <button class="hide" onclick="hideNewYear()">Hide New Year</button>
+    </div>
+
+
+    <section id="halloween" class="card">
+      <h2>Halloween</h2>
+      <img src="../images/hellowen.webp" alt="Jack-o’-lantern"> 
+      <p>Halloween is on October 31st. People go trick‑or‑treating.</p>
+      <p>Trick-or-treating started in the early 20th century in the U.S.</p>
+    </section>
+
+    <section id="christmas" class="card">
+        <img src="../images/merrych.jpeg" alt="Merry Christmas">
+      <h2>Christmas</h2>
+      <p>Christmas is on December 25th.</p>
+      <p>Popular symbols include stars, bells, stockings, and gifts.</p>
+    </section>
+
+    <section id="newyear" class="card">
+      <h2>New Year</h2>
+      <img src="../images/newyear.jpg" alt="New Year">
+      <p>New Year starts at midnight on December 31st.</p>
+      <p>Ancient Romans celebrated Janus, the god of beginnings and transitions.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
