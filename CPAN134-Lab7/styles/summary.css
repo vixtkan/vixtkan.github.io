@@ -1,0 +1,278 @@
+html {
+  background: url("../images/bats.gif") repeat center fixed;
+}
+
+.main-content {
+  max-width: 960px;
+  min-height: 100vh;
+  margin: 20px auto;
+  background: #fff;
+  box-shadow: 0 10px 10px 10px black;
+  border-bottom: 3px solid #000;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  position: relative;
+}
+
+main{
+    flex: 1;
+    display: flex;
+    flex: 1 1 auto;
+    align-items: stretch;
+    gap: 20px;
+}
+
+
+header { 
+  display: block;                
+  padding: 0;
+  background: linear-gradient(to right, #faf6f2, #ff9d0a, rgb(37, 36, 36));
+}
+
+header > a:first-child img {
+  float: left;
+  height: 72px;
+  margin: 10px 12px 10px 10px;  
+}
+
+
+header h1,
+header h3 {
+  text-indent: 0;                 
+  margin: 0;
+}
+header h1 { 
+  margin-top: 12px; 
+}   
+
+header h3 { 
+  margin-top: 10px; 
+}
+
+header .top-nav {
+  clear: both;
+  margin-top: 6px;
+}
+
+.top-nav {
+  margin-top: 2px;
+  display: block;
+  background: #000;
+  border-bottom: 6px solid #222;
+}
+.top-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.top-nav li { 
+    margin: 0;
+    padding: 0; 
+}
+
+.top-nav a {
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.top-nav a:hover { 
+    background-color: gray; 
+    color: orange; 
+}
+
+.top-nav a.current { 
+    color: orange; 
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+p { 
+    margin: 15px; 
+}
+
+h2 { 
+    margin: 20px; 
+    margin-top: 60px; 
+}
+
+h4 { 
+    margin: 18px; 
+}
+
+
+.sidebar {
+  background-color: #fff;
+  padding: 30px 20px;
+  margin-top: 20px;
+  float: left;
+  box-sizing: border-box;
+}
+
+
+#left-sidebar.sidebar { 
+    width: 150px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar-nav ul { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.sidebar-nav li + li { 
+    margin-top: 10px; 
+}
+
+.sidebar-nav a {
+  display: block;
+  background-color: orange;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: left;
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 3px;
+}
+
+.sidebar-nav li a:hover { 
+    color: green; 
+}
+
+
+.content {
+    overflow: auto;
+    margin: 0; 
+    flex: 1;
+}
+
+footer {
+  border-top: 3px solid #000;
+  background-image: linear-gradient(to left, #faf6f2, #ff9d0a, rgb(37, 36, 36));
+  text-align: center;
+  padding: 10px 0;
+}
+
+
+main::after { 
+    content: ""; 
+    display: table; 
+    clear: both; 
+}
+
+
+@media (max-width: 800px) {
+  html {
+    background: none;
+  }
+  .content {
+    margin: 20px; 
+  }
+  #right-sidebar {
+    float: none; 
+    width: auto;
+    margin: 10px 20px;
+  }
+  .img-main img.product-img {
+    width: 60%;
+  }
+}
+
+
+@media (max-width: 479px) {
+  header h1,
+  header h3,
+  section h1:first-of-type {
+    font-size: 0.9em; 
+  }
+  .img-main img.product-img {
+    width: 100%; 
+    float: none; 
+    margin-bottom: 10px; 
+  }
+}
+
+
+
+
+.product-table caption {
+    caption-side: top;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0 10px;
+}
+
+.product-table {
+    width: 80%;
+    margin: 0;
+    border-collapse: collapse;
+}
+
+.product-table th,
+.product-table td {
+    border: none !important;
+}
+
+.product-table thead th {
+    color: grey;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.product-table tbody th.cat {
+    text-align: left;
+    font-weight: bold;
+    padding: 6px 10px 6px 0;
+    background: none;
+    vertical-align: top;
+    width: 150px;
+}
+
+.product-table thead th {
+    color: grey;
+    padding: 10px 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.product-table thead th:first-child {
+    text-align: left;
+}
+
+
+.product-table thead th:last-child {
+    text-align: right;
+}
+
+.product-table tbody tr td:nth-of-type(1) {
+    text-align: center;
+}
+
+.product-table tbody tr td:nth-of-type(1) a:link,
+.product-table tbody tr td:nth-of-type(1) a:visited {
+    color: #000 !important;
+    text-decoration: underline !important;
+}
+
+.product-table tbody tr td:nth-of-type(1) a:hover {
+    color: green !important;
+}
+
+.product-table tbody tr td:nth-of-type(2) {
+    background-color: #F5DEB3;
+    text-align: right;
+    font-weight: bold;
+    width: 10%;
+    padding: 6px 5px 2px 0;
+}
